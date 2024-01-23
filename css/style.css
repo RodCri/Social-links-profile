@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  min-height: 100vh;
+}
+
+.content {
+  background-color: hsl(0deg, 0%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  color: hsl(0deg, 0%, 100%);
+  width: 100%;
+  min-height: 100dvh;
+}
+.content .card {
+  width: 90%;
+  max-width: 390px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: hsl(0deg, 0%, 12%);
+  border-radius: 1rem;
+  padding: 40px;
+  text-align: center;
+}
+.content .card__figure {
+  width: 100%;
+}
+.content .card__figure .card__profile {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.content .card__name {
+  font-size: 2.5rem;
+}
+.content .card__location {
+  color: hsl(75deg, 94%, 57%);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.content .card__links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  font-size: 1.4rem;
+}
+.content .card__links .card__title {
+  margin-bottom: 18px;
+  font-size: 1.3rem;
+}
+.content .card__links .card__link {
+  background-color: hsl(0deg, 0%, 20%);
+  padding: 15px 0;
+  border-radius: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.content .card__links .card__link:hover {
+  background-color: hsl(75deg, 94%, 57%);
+  color: hsl(0deg, 0%, 8%);
+}
+
+/*# sourceMappingURL=style.css.map */

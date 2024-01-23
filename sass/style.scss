@@ -1,0 +1,77 @@
+@use 'variables' as v;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
+  min-height: 100vh;
+}
+.content{
+  background-color: v.$off-black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  color: v.$white;
+  width: 100%;
+  min-height: 100dvh;
+  .card{
+    width: 90%;
+    max-width: 390px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: v.$dark-grey;
+    border-radius: 1rem;
+    padding: 40px;
+    text-align: center;
+    &__figure{
+      width: 100%;
+      .card__profile{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+      }
+    }
+    &__name{
+      font-size: 2.5rem;
+    }
+    &__location{
+      color: v.$green;
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    &__links{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+      font-size: 1.4rem;
+      .card__title{
+        margin-bottom: 18px;
+        font-size: 1.3rem;
+      }
+      .card__link{
+        background-color: v.$grey;
+        padding: 15px 0;
+        border-radius: .8rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all .3s ease;
+        &:hover{
+          background-color: v.$green;
+          color: v.$off-black;
+        }
+      }
+    }
+  }
+}
